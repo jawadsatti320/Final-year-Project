@@ -1,0 +1,27 @@
+name: oct_eye_disease_detector
+description: OCT Eye Disease Detector (ver_1.0)
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: ">=2.19.0 <4.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  cupertino_icons: ^1.0.2
+  image_picker: ^0.8.7+4
+  image: ^4.0.17
+  tflite_flutter: ^0.11.0
+  file_picker: ^5.2.7
+  path_provider: ^2.0.14
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/EfficientNetV2M_OCTDL.tflite
+    - assets/placeholder.png
